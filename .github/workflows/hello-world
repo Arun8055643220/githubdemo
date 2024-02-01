@@ -15,7 +15,7 @@ jobs:
       - uses: actions@checkout@v2
       - name: hellow world
         run" echo "hellow world"
-        shell : echo
+        shell : bash
 
 goodbye:
   runs-on: ubantu-lastest
