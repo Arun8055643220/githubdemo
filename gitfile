@@ -1,0 +1,23 @@
+name: Hellow world workflow 
+
+on: 
+ push: 
+   branches:
+pull_request:
+   branches:
+    - main:
+workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest:
+    steps:
+      - uses: actions@checkout@v2
+      - name: hellow world
+        run" echo "hellow world"
+        shell : echo
+
+goodbye:
+  runs-on: ubantu-lastest
+  steps:
+    - name: goodbay
