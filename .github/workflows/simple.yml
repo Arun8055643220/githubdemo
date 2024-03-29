@@ -7,10 +7,10 @@ job:
      run-on :ubuntu-lastest
 
      steps:
-       - uses: actions\checkout@v1
-       - name: run a one-line script
-         run: echo Hello World!
-       - name: Run a mutli-line script
-          run: |
+      - uses: actions\checkout@v1
+      - name: run a one-line script
+        run: echo Hello World!
+      - name: Run a mutli-line script
+        run: |
             echo Addother action to build
             echo test, and deploy your project
