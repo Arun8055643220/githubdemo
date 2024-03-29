@@ -1,0 +1,14 @@
+name: Test Workflow
+
+on: 
+ push:
+  branches:
+    - main:
+    
+jobs:
+  test-job:
+    runs-on: ubuntu-latest  # This defines the runner environment (OS)
+    steps:
+      - uses: actions/checkout@v3  # This checks out your code from the repository
+      - run: echo "This is a test workflow!"  # This is a simple test step that prints a message
+
